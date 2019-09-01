@@ -34,9 +34,31 @@
       <div id="new thing">
       <h3>But here are a list of the different degrees that are available in the world right now. Taken from the <cite><a href="admission.uoguelph.ca/programs/list" target="_blank">University of Guelph</a></cite></h3>
       <h3>That's way too much for me to list manually... unless there's a better way, which I'll search for some other time</h3>
-      nav ul{height:500px; width:400px;}
-      nav ul{overflow:hidden; overflow-y:scroll;}
-  <nav>
+	      <style>
+/*      nav ul{height:500px; width:400px;}
+      nav ul{overflow:hidden; overflow-y:scroll;}*/
+		      
+		      .vertical-menu{
+			      width: 400px;
+			      height: 500px;
+			      overflow-y: auto;
+		      }
+		      .vertical-menu a{
+			      background-color: #eee;
+			      color: black;
+			      display: block;
+			      padding: 12px;
+			      text-decoration: none;
+		      }
+		      .vertical-menu a:hover{
+			      background-color: #ccc;
+		      }
+		      .vertical-menu a.active{
+			      background-color: #4CAF50;
+			      color: white;
+		      }
+	      </style>
+  <div class="verical-menu">
   <ul>
   <li>Accounting</li>
 	<li>Animal Biology</li>
@@ -126,17 +148,17 @@
 <li>Software Engineering</li>
 <li>Studio Art</li>
 
-<ul>Theatre Studies</li>
+<li>Theatre Studies</li>
 <li>Theoretical Physics</li>
 
 <li>Water Resources Engineering</li>
 <li>Wild Life Biology and Conservation</li>
 </ul>
-</nav>
+	      </div>
 
 <p>haha here's to hoping it works...</p>
 <div id="media">
-  <h3>A parody of university by Ryan Higa of the YouTube channel "<cite><em><a href="https://www.youtube.com/user/nigahiga">NigaHiga</a></em></cite>"</h3>
+  <h3>A parody of university by Ryan Higa of the YouTube channel "<cite><em><a href="https://www.youtube.com/user/nigahiga" target="_blank">NigaHiga</a></em></cite>"</h3>
   <video src="https://www.youtube.com/watch?v=T24DPU-hkJM" height="700" width="900" controls>Video not supported</video>
 </div>
 
