@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 60%;
-    background: white;
+    background: #F5F5F5;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Calibri', 'Sans-Serif';
@@ -42,20 +42,3 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-
-/*Change colors*/
-
-/*
-:target{
-    color: lightyellow;
-    background: indianred;
-}
-
-h2, p{
-    color: indianred;
-}
-h2::before{
-    counter-increment:srl;
-    content: counter(srl)". ";
-}
-*/
