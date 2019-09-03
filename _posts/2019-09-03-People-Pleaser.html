@@ -25,7 +25,7 @@
       </nav>
       
       <div id="introduction">
-			<h6><b>Disclaimer:</b> I had just about finished this <small>very<small> long post but accidentally lost it by clicking 'f11' which inspects the page and, for me, turns my post page into blank. So I'm a little annoyed right now, but hey what's life without a little adversity right? But I mean there's gotta be some kind of auto save function for this coding site ffs right?</h6>
+			<h6><b>Disclaimer:</b> I had just about finished this <small>very</small> long post but accidentally lost it by clicking 'f11' which inspects the page and, for me, turns my post page into blank. So I'm a little annoyed right now, but hey what's life without a little adversity right? But I mean there's gotta be some kind of auto save function for this coding site ffs right?</h6>
 			<br>
         <h2>For all you selfish a*holes...</h2>
 				<p>You don't know how lucky you are to not seek validation from others. I've slowly learned the balance between pleasing others and respecting myself. It's not about bending over back just to make sure other people are happy, but rather doing things that you are confident about doing and not letting other's needs influence your own integrity and self-respect. I feel like the <i>desire</i> to please others comes from a baseline of low self-worth because you always trying to seek other's validation. To prove it to you, if you ever see even one person not enjoying their time, you feel bad. But hopefully it's because you are a perfectionist and not because you need everyone to like you in order for you to feel good about yourself. This need for attention and validation, just based on my own experiences and observing some people around me, comes from a shaky foundation with your support circle. Be it your parents/siblings/closest friends, if they never seem to be pleased by you or not proud of you, your desire for their approval may stem into your adult life and influence the way you hold yourself. Now I'm no psychologist, I haven't dedicated 20 years of my life to researching the child-parent relationship dynamic... but there is a great book by Amir Levine and Rachel Heller called <cite><a href="https://www.amazon.com/Attached-Science-Adult-Attachment-YouFind/dp/1585429139/ref=asc_df_1585429139/?tag=hyprod-20&linkCode=df0&hvadid=312403172530&hvpos=1o1&hvnetw=g&hvrand=14304220290606099746&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=200623&hvtargid=pla-436644332348&psc=1&tag=&ref=&adgrpid=60300244057&hvpone=&hvptwo=&hvadid=312403172530&hvpos=1o1&hvnetw=g&hvrand=14304220290606099746&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=200623&hvtargid=pla-436644332348" target="_blank">Attached</a></cite> that is a great read about the dynamics of your relationship with your parents and how it affects your relationship with others (your significant other). By the way I am not affiliated with Amazon or whoever, I'm just practing my coding and that's all. Honestly speaking, my previous entry was a lot stronger than this, but it does take a lot of wind out of your sail when you lose a piece of work you've been grinding away at for a couple hours.</p>
@@ -34,32 +34,37 @@
       
       <div id="new thing">
         <h2>To quench my need to be a people pleaser, I've added a way for you to change the color of the text and background to suit your own tastes</h2>
-				<select name=”clr” onchange=”document.bgColor=this.options[this.selectedIndex].value” size=”1″>
-				<br>
-				<option value=”black”>black
-						<option value=”orange”>orange
-								<option value=”flamingred”>fuschia
-										<option value=”lightyellow”>light yellow
-												<option value=”green”>green
-														<option value=”cyan”>cyan
-																<option value=”yellow”>yellow
-																		<option value=”red”>red
-																				<option value=”white”>white</option>
-				</select>&nbsp;&nbsp;Background Color
-
-				<br>
-				<select name=”clr” onchange=”document.fgColor=this.options[this.selectedIndex].value” size=”1″>
-						<br>
-						<option value=”black”>black
-								<option value=”orange”>orange
-										<option value=”flamingred”>fuschia
-												<option value=”lightyellow”>light yellow
-														<option value=”cyan”>cyan
-																<option value=”yellow”>yellow
-																		<option value=”red”>red
-																				<option value=”white”>white</option>
-				</select>&nbsp;&nbsp;Text Color
-				<p>Hopefully this works</p>
+				<style>
+					.colorBlock{
+						width: 100px;
+						height: 100px;
+					}
+					#Black{
+						background-color: #000;
+					}
+					#Blue{
+						background-color: #00f;
+					}
+					#Red{
+						background-color: #f00;
+					}
+					#Green{
+						background-color: #0f0;
+					}
+				</style>
+				<div class="colorBlock" id="Black"></div>
+				<div class="colorBlock" id="Blue"></div>
+				<div class="colorBlock" id="Red"></div>
+				<div class="colorBlock" id="Green"></div>
+				<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript" charset="utf-8">
+			 //Create anonymous function that listens for a click on anything with the class colorBlock
+				$(".colorBlock").click(function() {
+					//Get the background color of the clicked color block by using the this object
+					var $backgroundColor = $(this).css("background-color");
+					//Set the body's background-color to the received background-color
+					$("body").css("background-color", $backgroundColor);
+				});
       </div>
 			
 			<div id="media">
