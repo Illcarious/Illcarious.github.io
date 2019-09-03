@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 90%;
+    width: 60%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Calibri', 'Sans-Serif';
@@ -43,7 +43,7 @@ ul.posts li {
 }
 
 /*Change colors*/
-/*
+
 :target{
     color: lightyellow;
     background: indianred;
@@ -56,4 +56,4 @@ h2::before{
     counter-increment:srl;
     content: counter(srl)". ";
 }
-*/
+
