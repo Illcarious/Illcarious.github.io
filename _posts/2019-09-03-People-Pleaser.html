@@ -7,9 +7,16 @@
 	<script type='text/javascript'>
 	  $(function(){
 	       // When a color is chosen, set it as the background for this page
-	       $("#color").change(function(){
+	       $("#bcolor").change(function(){
 		  // Set the background to that color
 		  $("body").css('background', $(this).val());
+	       });
+	  });
+	$(function(){
+	       // When a color is chosen, set it as the background for this page
+	       $("#tcolor").change(function(){
+		  // Set the background to that color
+		  $("p").css('color', $(this).val());
 	       });
 	  });
 	</script>
@@ -47,7 +54,16 @@
       <div id="new thing">
         <h2>To quench my need to be a people pleaser, I've added a way for you to change the color of the text and background to suit your own tastes</h2>
 	<!-- A Drop down list with a collection of colors -->
-	  <select id='color'>
+	  <select id='bcolor'>
+		  <p>Background</p>
+	    <!-- Notice the value properties will be the actual background values to use (e.g colors or URL values) -->
+	    <option value='initial'>Normal</option>
+	    <option value='red'>Red</option>
+	    <option value='yellow'>Yellow</option>
+	    <option value='blue'>Blue</option>
+	  </select>
+	  <select id='tcolor'>
+		  <p>Text</p>
 	    <!-- Notice the value properties will be the actual background values to use (e.g colors or URL values) -->
 	    <option value='initial'>Normal</option>
 	    <option value='red'>Red</option>
