@@ -44,6 +44,7 @@ ul.posts li {
 
 /*Change colors*/
 
+/*
 :target{
     color: lightyellow;
     background: indianred;
@@ -56,4 +57,4 @@ h2::before{
     counter-increment:srl;
     content: counter(srl)". ";
 }
-
+*/
