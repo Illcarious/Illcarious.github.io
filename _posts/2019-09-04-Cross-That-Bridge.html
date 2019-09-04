@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <style>
+.vr {
+    width:9px;
+    background-color:#000;
+    position:fixed;
+    top:80px;
+    bottom:500px;
+    left:80px;
+}
+.vr2 {
+    width:9px;
+    background-color:#000;
+    position:fixed;
+    top:80px;
+    bottom:500px;
+    left:200px;
+}
+#mydivblock {
+  padding: 10px;
+  position: absolute;
+  cursor: move;
+  z-index: 10;
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff;
+  border: 1px solid #d3d3d3;
+}
+  </style>
 <head>
 <title>{{ page. title }}</title>
 <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -31,7 +59,62 @@
 <p>the saying "cross the bridge when you get there". I'm not going to cite this quote because I have no idea who said, I don't want to search it up, and quite frankly, I'm a little annoyed by it. Not by the use of the saying itself but by the different contexts that I've heard it being used--when talking with me!--and it's just such a cop-out attitude (when they use it when talking with me). Now I've used it too myself, during the right circumstances a.k.a. when you need to make an immediate decision when there are multiple future scenarios that can play out. You can then "cross that particular bridge when you get there", but first make your decision, "plug that hole in the sinking ship" (I admit I paraphrased that quote from Steve Jobs who paraphrased it from someone else - you can read about it in Walter Isaacson's biography of <a href="https://www.amazon.ca/Steve-Jobs-Walter-Isaacson/dp/1451648537/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank">Steve Jobs</a>). But when it's used as the answer to a very consequential decision like: "do you want to have kids if we marry? Because I want to have kids" and the answer is "we'll cross that bridge when we get there", like NO! You can't/shouldn't/shan't do that! That's not fair to either of you. Just know in which context to use it and if need be, use it accordingly.</p>
 <hr size="3" color="rebeccapurple">
 <p>I find rebeccapurple to be the most interesting name for a color. Though it reminds me of Rebecca Black and <a href="https://www.youtube.com/watch?v=kfVsfOSbJY0" target="_blank">Friday</a>. Aww yeah such lucid memories. Anyway, today was the first day back in school. I've got a pretty packed semester in my opinion since I just finished my data structures and algorithms course from the summer time (A+ least I did well. See what I did there? Heh heh? &#128522 &#9996;&#127995 <-hopefully that worked.
-But yeah first day back, I'm in all 3rd year courses, because well, I'm in a hurry. Most excited and scared about AI (haha... like everyone in the world) and most interested about Human-Comp Interactions. A little nervous about Computer Graphics because of the math involved but unless I'm going through hell, I'll grind it out. Databases is tomorrow; from first read of the textbook, it seems really interesting and [insert text here] I don't wanna jinx it. But AI, jeez, 3 assignments and a freaking research paper. I mean it's not like I've never written (16+ -- biosci is a b*) research papers before but AI research paper seems a little-it's a challenge for sure, to see where my own <em><a href="https://www.amazon.ca/Where-Good-Ideas-Come-Innovation/dp/1594485380" target="_blank">adjacent possible</a></em> is.
+But yeah first day back, I'm in all 3rd year courses, because well, I'm in a hurry. Most excited and scared about AI (haha... like everyone in the world) and most interested about Human-Comp Interactions. A little nervous about Computer Graphics because of the math involved but unless I'm going through hell, I'll grind it out. Databases is tomorrow; from first read of the textbook, it seems really interesting and [insert text here] I don't wanna jinx it. But AI, jeez, 3 assignments and a freaking research paper. I mean it's not like I've never written (16+ -- biosci is a b*) research papers before but AI research paper seems a little-it's a challenge for sure, to see where my own <em><a href="https://www.amazon.ca/Where-Good-Ideas-Come-Innovation/dp/1594485380" target="_blank">adjacent possible</a></em> is. <small><small><small>legit uploaded this early to make sure I don't make the same mistake as last post and accidentally losing everything, but I really feel like there should be a better way</small></small></small></p>
+</div>
+
+<div id="new thing">
+  <h2>Build a bridge, and get over it...</h2>
+  <div class="vr">&nbsp;</div>
+<div class="vr2">&nbsp;</div>
+<div id="mydivblock">Click and drag</div>
+
+<script>
+//Make the DIV element draggable:
+dragElement(document.getElementById("mydivblock"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id)) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id).onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+  <p>yup the code is messy, but hey I'm learning. Also, the syntax and functions of css are starting to become more clear for me now. Borrowed the code from <a href="https://www.w3schools.com/howto/howto_js_draggable.asp" target="_blank">these guys</a></p>
+  <p>That's a murky subject too: how much code can you copy before you aren't learning anything and just copy-pasting code from other sources (which btw I can't say my friends haven't said doesn't happen in companies anyway...)</p>
 </div>
 </body>
 </html>
