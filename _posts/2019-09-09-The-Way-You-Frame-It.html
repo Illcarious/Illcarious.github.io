@@ -5,12 +5,41 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     
     <style>
-      
+      .example {
+        border-left: 2px solid black;
+        padding: 3px;
+        outline-style: double;
+        outline-color: #80ffff;
+      }
+      h2 {
+        border-bottom: 2px dotted black;
+        font-variant: small-caps;
+      }
+      .navstyle {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding: 7px 18px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      a:hover, a:active {
+        background-color: blue;
+        border: 2px solid #80ffff;
+        color: white;
+      }
+      .ending {
+        text-decoration: overline;
+      }
+      p.small {
+        line-height: 0.7;
+      }
     </style>
   </head>
   
   <body>
-    <nav>
+    <nav class="navstyle">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
@@ -24,21 +53,21 @@
     
     <nav>
       <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#new thing">New Thing</a></li>
-        <li><a href="#media">Media</a></li>
+        <li><a class="navstyle" href="#introduction">Introduction</a></li>
+        <li><a class="navstyle" href="#new thing">New Thing</a></li>
+        <li><a class="navstyle" href="#media">Media</a></li>
       </ul>
     </nav>
     
     <div id="introduction">
       <h2>Perspective dictates how we see what we see</h2>
-      <p>Most people know the old oft-quoted saying "To a pessimist the cup is half empty; to the optimist the cup is half full; and to the politician, the cup is theirs" or something like that. There's a variation of it in the church community about the metaphor of the rose-tinted glasses. That no matter what you see, it will be in the color red (or light pink or whatever that color is) because you are wearing those glasses and thus will see everything through those lenses. Now, you don't want to have too extreme a perspective on things though. You don't want to be too (or only) pessimistic nor optimistic. We need both. You don't want to be too pessimistic and say that you will be late to work and lose your job and therefore not be able to support your family, all because some dude cut you off in traffic. Nor do you want to be too optimistic and smile on your way down into the lake because you steered to avoid that dude who cut you off in traffic and you crashed through the barricade.</p>
-      <p>There's a time and place for everything. In fact, the right move at the wrong time is the wrong move; and obviously the wrong move at even the right time is the wrong move. The goal of a majority of people is to marry, have children, and grow old together. You can't (or at least shouldn't) grow old together first, then have the children, and then exchange vows on your deathbed. To each their own, but you may as well do it in a more optimal way...</p>
+      <p class="example">Most people know the old oft-quoted saying "To a pessimist the cup is half empty; to the optimist the cup is half full; and to the politician, the cup is theirs" or something like that. There's a variation of it in the church community about the metaphor of the rose-tinted glasses. That no matter what you see, it will be in the color red (or light pink or whatever that color is) because you are wearing those glasses and thus will see everything through those lenses. Now, you don't want to have too extreme a perspective on things though. You don't want to be too (or only) pessimistic nor optimistic. We need both. You don't want to be too pessimistic and say that you will be late to work and lose your job and therefore not be able to support your family, all because some dude cut you off in traffic. Nor do you want to be too optimistic and smile on your way down into the lake because you steered to avoid that dude who cut you off in traffic and you crashed through the barricade.</p>
+      <p class="example">There's a time and place for everything. In fact, the right move at the wrong time is the wrong move; and obviously the wrong move at even the right time is the wrong move. The goal of a majority of people is to marry, have children, and grow old together. You can't (or at least shouldn't) grow old together first, then have the children, and then exchange vows on your deathbed. To each their own, but you may as well do it in a more optimal way...</p>
     </div>
     
     <div id="new thing">
-      <h2>Iframe inception</h2>
-      <p>Technically this is not a 'new thing' but rather doing something new with an old piece of code. I didn't realize that when I was using 'iframe' to add videos into these posts that it was actually just giving me the 'frame of the website' in a sense. To prove it to you, here's gonna be a window for you to (hopefully) perform some inception on the webpage, assuming my logic is correct.</p>
+      <h2>Inception</h2>
+      <p class="example">Technically this is not a 'new thing' but rather doing something new with an old piece of code. I didn't realize that when I was using 'iframe' to add videos into these posts that it was actually just giving me the 'frame of the website' in a sense. To prove it to you, here's gonna be a window for you to (hopefully) perform some inception on the webpage, assuming my logic is correct.</p>
       <iframe height="500px" width="100%" src="https://illcarious.github.io/blog/2019/09/09/The-Way-You-Frame-It" name="inception"></iframe>
       <ul>
         <li><a href="https://illcarious.github.io/blog/2019/09/09/The-Way-You-Frame-It" target="inception">Click for Inception</a></li>
@@ -46,5 +75,14 @@
         <li><a href="https://www.forbes.com/billionaires/#7ccc32bb251c">World's Richest People</a></li>
       </ul>
     </div>
+    
+    <div id="media">
+      <h2>Your flawed perspective is how magic works...<h2>
+        <iframe width="760" height="515" src="https://www.youtube.com/embed/EAN-PwRfJcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+        
+        <footer>
+          <p class="small" text-decoration="overline"><small><small>Dude's a freaking magician, like literally</small></small></p>
+        </footer>
   </body>
 </html>
