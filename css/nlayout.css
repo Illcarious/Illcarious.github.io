@@ -1,0 +1,33 @@
+h1{
+	font-family: "Lucida Grande", sans-serif;
+}
+p{
+	font-family: "Georgia", serif;
+    line-height: 20px;
+    color: black;
+}
+
+nav ul, footer ul {
+    font-family: "Lucida Sans Unicode", "Calibri", sans-serif;
+    list-style: none;
+    padding: 12px;
+    outline: 8px px solid black;
+    font-weight: bold;
+    background: black;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+	color: lightgrey;
+}
+
+body{
+	background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0398/7307/rgradientred01b_shop_thumb.png");
+    background-repeat: repeat-x;
+}
