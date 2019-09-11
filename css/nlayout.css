@@ -1,5 +1,5 @@
 h1{
-    font-family: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+	font-family: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
     color: white;
     padding: 3px;
     text-shadow: 1px 2px Maroon;
@@ -7,15 +7,15 @@ h1{
 }
 
 h2{
-    border-left: 4px solid black;
-    font-family:400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+	border-left: 4px solid black;
+	font-family:400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
     color: white;
     text-shadow: 1px 1px 1px maroon;
     background-color: black;
     width: auto;
 }
 p{
-    font-family: "Georgia", serif;
+	font-family: "Georgia", serif;
     line-height: 20px;
     color: black;
 }
@@ -32,15 +32,26 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
+.pointer {
+    font-family: "Calibri", sans-serif;
+    list-style: none;
+    margin: 1px 5px 1px 5px;
+    text-align: left;
+    padding: 0px;
+    font-size: 17px;
+    color: black;
+    background: none;
+}
 a {
     text-decoration: none;
     color: white;
 }
 a:hover {
-    color: lightgrey;
+	color: lightgrey;
 }
 
 body{
-    background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0398/7307/rgradientred01b_shop_thumb.png");
+	background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0398/7307/rgradientred01b_shop_thumb.png");
     background-repeat: repeat-x;
 }
