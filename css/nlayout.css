@@ -57,6 +57,7 @@ a:hover {
 body{
     background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0398/7307/rgradientred01b_shop_thumb.png");
     background-repeat: repeat-x;
+    background-attachment: fixed;
     margin: 60px auto;
     width: 60%;
 }
