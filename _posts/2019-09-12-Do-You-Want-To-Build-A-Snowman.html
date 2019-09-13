@@ -3,7 +3,30 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/nlayout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+      .accordion {
+        backgroun-color: red;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
     </style>
   </head>
   <body>
