@@ -27,6 +27,16 @@
         float: right;
         margin-left: 5px;
       }
+      .active:after {
+        content: "\2212";
+      }
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
     </style>
   </head>
   <body>
@@ -54,10 +64,38 @@
       <h2>The thing I looked forward to the most</h2>
       <p>During the winter, things get cold. You can't do anything. You're freezing and tired. But because people can find joy in anything, I would always look forward to building a snowman. Because you're creating something yourself; your parents won't say no; and it was a form of social interaction. At our school, there would be one kid that starts building a snowman. He would roll a snowball about half his height and then find another chunk of snow to start rolling. Then another kid would see this and he would want to compete with the first kid and he'd start rolling his own snowball. And then another. And another. Until there were patches of grass all over the field and there would be not enough snow to start a new snowman so the kids who were late coming out would start joining the other teams of existing snowmen. And the lead kid would start weeding out the lazy workers and these lazy workers would try to join one of his competitors and since the competitor needed more manpower they would accept this reject and they would all start building snowmen. Sometimes it feels like this world is just one kid who started to build a snowman because there was snow, and another followed suit. There are so many copy-cat/knock-off products on the market it's amazing. Amazon alone shows you the extent of copycat companies. Even content publishers are copycats. How many articles of the iPhone 11 have there been since yesterday? How many tell you one new thing each (and not just different synonyms of the same thing)? But this copying is good for consumers. It ensures innovation. Apple has so many customers because it (used to be) the most innovative; now we're just getting higher pixel density and bigger screens. Copying is actually the greatest form of flattery because no one wants to copy a loser. Even Picasso himself said "Good artists copy" but more importantly, what we seem to be lacking now is "great artists (who) steal". And by that I/we mean someone who takes someone else's idea, refines it, modifies it to be even better, and passes it on as his own. Microsoft stole from Apple who stole from Xerox and the computer industry was born (You can search it up yourself, I'm not lying). But that's what Picasso meant by great artists steal. Not that they actually stole someone else's property, but rather improved upon someone else's idea/product/service and passed it off as their own (which I think seems legal enough). The world is full of <a href="https://www.nightingale.com/newsletters/jim-rohn-good-ideas-the-keys-to-living-the-good-life-604" target="_blank">good artists, hardworking artists, sincere artists</a>; but we need some more <em>great</em> artists.</p>
     </div>
-    <div id="new thing">
+    <div id="new thing" background-image="https://upload.wikimedia.org/wikipedia/en/6/6d/Olaf_from_Disney%27s_Frozen.png" style="text-align: right">
       <h2>Part of building a good snowman</h2>
-      <p>Is making the right parts. You need a big solid base snowball, roughly half your height in diameter. A middle snowball that is 2/3 the diameter of the first. And a head snowball with a proper size to make it physically possible. Kind of like an accordian with its 3 parts: 2 outer piano pieces (whatever they're called), and the middle stretchy part.</p>
+      <p>Is making the right parts</p>
       
+      <button class="accordion">The Butt</button>
+      <div class="panel">
+        <p>You need a big solid base snowball, roughly half your height in diameter</p>
+      </div>
+      
+      <button class="accordion">The Belly</button>
+      <div class="panel">
+        <p>A middle snowball that is 2/3 the diameter of the first</p>
+      </div>
+      
+      <button class="accordion">The Belly</button>
+      <div class="panel">
+        <p> And a head snowball with a proper size to make it physically possible</p>
+      </div>
+      <p>Kind of like an accordian with its 3 parts: 2 outer piano pieces (whatever they're called), and the middle stretchy part.</p>
     </div>
+    <div id="media">
+      <h2>Do you wanna build a snowman?</h2>
+      <iframe width="600" height="475" src="https://www.youtube.com/embed/V-zXT5bIBM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <nav>
+        <ul class="pointer">
+          <li><a class="pointer" href="/">email</a></li>
+          <li><a class="pointer" href="/">linkedin</a></li>
+        </ul>
+      </nav>
+    </footer>
+    
   </body>
 </html>
