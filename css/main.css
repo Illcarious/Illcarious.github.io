@@ -42,7 +42,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-//----------------for the menu----------------
+/*----------------for the menu----------------*/
 h2 {
     border-left: 6px solid #006680;
     background-color: #66e0ff;
