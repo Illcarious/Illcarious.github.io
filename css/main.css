@@ -67,7 +67,7 @@ li a, .dropbtn {
     position: sticky;
 }
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #006680;
 }
 li.dropdown {
     display: inline-block;
