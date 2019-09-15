@@ -16,10 +16,14 @@
 
     li a, .dropbtn {
       display: inline-block;
-      color: blue;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+    }
+    .sticky{
+      position: -webkit-sticky;
+      position: sticky;
     }
     li a:hover:not(.active) {
       background-color: #111;
@@ -72,7 +76,7 @@
     </nav>
     <h1>It's One of Those Days</h1>
     <nav>
-      <ul>
+      <ul class="sticky">
         <li><a href="#story">Story</a></li>
         <li><a href="#new thing">New Thing</a></li>
         <li><a href="#media">Media</a></li>
