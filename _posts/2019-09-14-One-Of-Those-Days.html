@@ -12,6 +12,14 @@
     li.dropdown {
       display: inline-block;
     }
+      
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
     .dropdown-content {
       display: none;
@@ -48,7 +56,7 @@
           <a href="javascript:void(0)" class="dropbtn">Practice</a>
           <div class="dropdown-content">
             {% for post in site.posts %}
-              <li><span><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         <div</li>
       </ul>
@@ -68,7 +76,18 @@
       <p>I write all this as a reminder to myself because today is one of those days that I just don't want to do this. And it's been compounded since yesterday since I made a mistake and that mistake (although not life-changing) has led to other mistakes in judgment and so today has been littered with a little bit of regret. But I'm not gonna waste too much of today thinking about yesterday. So instead of something that is really "new", I'm probably going to just do some fun effects with this page.</p>
     </div>
     <div id="new thing">
-      <h2>
+      <h2>Novelty wears off quickly</h2>
+      <p>When things are new and original people are intrigued, but once that initial novelty wears off, people revert back to what they are familiar with. It's difficult to constantly innovate constantly push the bounds of creativity and what is possible. If you can aim for 1% better everyday a.k.a. one more rep in the gym, one more chapter in a book, one more fruit than candy, one more dollar in savings than spending... imagine where you will be at the end of just one year</p>
+      <p>For today, I fiddled around with the menu items a bit to see what would happen. Get more used to CSS</p>
     </div>
+    <div id="media">
+      <h2>Bet on me</h2>
+      <p>Imagine you could go back to your highschool and bet on one person and acquire 10% of what they are and own for the rest of your life, who would it be? You'd want someone who is strong, mentally and physically. Probably someone who has their finances together and is constantly investing in something to grow their portfolio. Maybe someone who has been through the trials and tribulations of life? Someone who has been through thick and thin and has survived (and thrived) through adversity. Someone with integrity and morals? Maybe even a touch of badass attitude? Someone with good humor and personality. Someone that is kind and caring. Someone that will leave a legacy behind? Someone that will always have your back? We all want to know someone like him/her right?</p>
+      <p>Why not become that person yourself?</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2x4vY0FrCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+      <footer>
+        <p>live, love, laugh</p>
+      </footer>
   </body>
 </html>
