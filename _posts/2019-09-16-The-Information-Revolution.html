@@ -44,6 +44,36 @@
       .dropdown:hover .dropdown-content {
           display: block;
       }
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type=submit] {
+        width: 100%;
+        background-color: #1affff;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #00e6e6;
+      }
+
+      div.form {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
     </style>
   </head>
   
@@ -74,6 +104,41 @@
     <div id="story">
       <h2>There have been 4 major revolutions which have impacted the world economy</h2>
       <p>The first was the Stone Age. The time when we first thought to use stone to as a tool/weapon. This helped us kill the first mammoth, shoot down a bird, and go head to head with the sabre-toothed tiger. The second was the Bronze Age when people learned how to play with fire effectively. This led to metal objects and deadlier weapons for war. Then we had the Industrial Revolution which utilized the 'power' of steam to produce work and therefore allow for the mass production and more efficient production of things. This resulted in mass population migration to an urban center and kicked off the start of our modern societal living arrangements. This essentially 'freed' people up from hunting and gathering and drove people away from farming and irrigation and allowed for more focus towards advancing other technologies. Leading of course to the Digital Age where everything is done using the computer which allows easy transfer of information from PEK to NYC in a mere nanosecond. The difference between the first 3 revolutions and this present one is that the first three have to do with tools. Stone helped us kill our food better than our hands; bronze helped us kill our food better, prepare it better and helped us make even more practical use of it (such as a cup, a cart, shovels etc); industrial utilized the steam engine to help us travel to places faster (car) as well as make manual labor automatic. But what the digital age brings that only the industrial revolution can lay claim to is transport things faster. With the steam engine, people were able to build cars and planes and allow people to travel from place to place within a few hours instead of a couple months. Computers, on the other hand, make the transfer of a document from one side of the world to another possible in less than a second. So if you were to think back to the bigger wars in history, even when the countries who were in conflict decided to make peace, it still took them a couple weeks/months for the news of peace to reach the battlefields and stop the soldiers from killing each other anymore. Although we can teleport physical objects that way just yet, what the digital age has brung is the ability for transferring of information at an unprecedented speed. This is why this era is also called the Information Age. Therefore there is really no excuse for anyone <em>not</em> to know something that has already been researched and analyzed to its depths.</p>
+    </div>
+    <div id="new thing">
+      <h2>I want to get in on this action</h2>
+      <p>I'm gonna need your name, email, address, social security number, and your mom's maiden name &#x1F601;</p>
+      <div class="form">
+        <form action="/action_page.php">
+        <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+          
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email">
+          
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Address">
+          
+          <label for="SIN">SIN</label>
+          <input type="number" id="sin" name="SIN" placeholder="Trust Me...">
+          
+          <label for="maiden">Mom's maiden name</label>
+          <input type="text" id="mname" name="mom's maiden name" placeholder="What's her name?">
+          
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div id="media">
+      <h2>The computer is just a tool for the human mind</h2>
+      <p>Bicycles are just tools to help humans operate more effectively and in its case, get to the destination faster. Computers are tools to help humans operate faster, cognitively. It has essentially become an extension of the human body.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yK9lIT39YeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <footer>
+        <p>If this is the case, then I want to drink deeply from this fountain</p>
+      </footer>
     </div>
   </body>
 </html>
