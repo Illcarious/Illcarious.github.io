@@ -1,4 +1,58 @@
 <!DOCTYPE html>
 <html>
-
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/practice">Practice</a></li>
+      </ul>
+    </nav>
+    <h1>Nope</h1>
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#new thing">New Thing</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    <div id="story">
+      <h2>Way too tired for this</h2>
+      <p>Went to youth group</p>
+      <p>I've come home tired</p>
+    </div>
+    <div id="new thing">
+      <h2>JS seems like just java except implemented in a browser</h2>
+      <button type="button" onclick="myFunction1()">Click</button>
+      <button type="button" onclick="myFunction2()">On</button>
+      <button type="button" onclick="myFunction3()">Me!</button>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <script>
+        function myFunction1(){
+          document.getElementById("demo1").innerHTML = "How"; 
+        }
+        function myFunction2(){
+          document.getElementById("demo1").innerHTML = "You"; 
+        }
+        function myFunction3(){
+          document.getElementById("demo1").innerHTML = "Doin?"; 
+        }
+      </script>
+    </div>
+    <div id="media">
+      <h2>How you doin'</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YjQ1xD6UL-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>I'm so tired</p>
+    </footer>
+  </body>
 </html>
