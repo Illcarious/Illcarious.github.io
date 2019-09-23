@@ -1,3 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/practice">Practice</a></li>
+      </ul>
+    </nav>
+    <h1>The More You Know</h1>
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#new thing">New Thing</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    <div id="introduction">
+    </div>
+    <div id="new thing">
+      <h2>The way it is</h2>
+      <p>Fun-fact: Unlike Java, JS variables are dynamic, so they don't have to be defined from the start.</p>
+      <p id="output"></p>
+      <p id="samp"></p>
+      <p>See if all that worked</p>
+      <script>
+        var person = {
+          firstName : "Jake",
+          lastName : "Doe",
+          age : 27
+        };
+        var person2 = {
+          fullName: function(f, l){
+            return f + " " + l; 
+          }
+        }
+        document.getElementById("output").innerHTML = "Whatever I wanna say, this is my Sys.out.println." + "<br>" + "I created a person object. Just to prove it to you: typeof person = " + typeof person + "aged: " + person.age;
+        document.getElementById("samp").innerHTML = "Gonna be a little creative with my code hehe.. " + "<br>" + "This new person's name will be: " + person2.fullName("Katy", "Jerry");
+      </script>
+    </div>
+    <div id="media">
+    </div>
+  </body>
 </html>
