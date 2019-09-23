@@ -13,9 +13,9 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+a.norm {
     text-decoration: none;
-    color: #4390DE;
+    color: #00FFFF;
 }
 a:hover {
     background-color: #80e5ff;
