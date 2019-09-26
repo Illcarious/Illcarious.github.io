@@ -3,6 +3,19 @@
   <head>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <style>
+      body {
+        background-color: black;
+      }
+      h1, h2 {
+        color: black;
+        border-left: 6px solid white;
+        background-color: #f2f2f2;
+      }
+      p {
+        color: white; 
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -22,8 +35,33 @@
         <li><a href="#media">Media</a></li>
       </ul>
     </nav>
-    <h2>I know I'm about 3 years late on this subject</h2>
-    <p>But seriously, what's with all the websites and apps using 'dark mode'? I mean I know that's how 'desktop' was originally going to be rolled out (Walter Isaacson's biography of Steve Jobs worth a read) but right now it's like all over the place. I have my YT app on my phone giving me a dark mode; FB messenger's got dark mode; <a href="https://www.capfriendly.com/" target="_blank">NHL salary caps</a> are in dark mode... I'm not complaining, just wondering why there's now an explosion of dark mode (I mean I know Apple's a trailblazer but like meh). I don't want to bring too much of my personal life into these posts but today I saw her in the gym again, and she is very pretty. I'm not sure if she's a freshman though, looks/seems more mature but can't be certain. I don't really care about the woman's age, I care mostly about their personality and sense of humor. I value laughter and an optimistic/joyful attitude in a relationship and I won't be with someone just because they are pretty. Life's too precious to brush it all off.</p>
-    
+    <div id="story">
+      <h2>I know I'm about 3 years late on this subject</h2>
+      <p>But seriously, what's with all the websites and apps using 'dark mode'? I mean I know that's how 'desktop' was originally going to be rolled out (Walter Isaacson's biography of Steve Jobs worth a read) but right now it's like all over the place. I have my YT app on my phone giving me a dark mode; FB messenger's got dark mode; <a href="https://www.capfriendly.com/" target="_blank">NHL salary caps</a> are in dark mode... I'm not complaining, just wondering why there's now an explosion of dark mode (I mean I know Apple's a trailblazer but like meh).</p>
+    </div>
+    <div id="new thing">
+      <h2>That idea about making these posts scalable?</h2>
+      <p>It feels like the things I'm learning in JS through <strong><a class="norm" href="https://w3schools.com" target="_blank">W3Schools</a></strong> is all Java-like (not that I'm a master at either Java or JS) and so these new things that I'm trying to put out there don't feel novel.</p>
+      <p>Time is the one thing we can't buy more of. It's the one thing that allows the most happiness; the most sadness; the most joy; and the most regret to occur. It's the one thing we should really optimize for everyday. <em>What</em> you want to do with you time is totally up to you. <em>I</em> hope to spend most of my time with my family (the maturer stages/phases of family) as well as my work to get something done on this planet. I do not take love for granted. After being in a pseudo-relationship (long-distance one at that), I do not take the simplest things for granted. Just being in the same city as her. Being able to see her in person, hug her, hold her in my arms... I don't take these things for granted. And I hope that I will have the opportunity (soon) to love someone with every fibre of my being.</p>
+      <p>This is the time I started writing this part of the post:</p>
+      <p id="one"></p>
+      <p>This is the time right now</p>
+      <p id="now"></p>
+      <script>
+        var d = new Date(2019, 08, 25, 07, 33, 35, 0);
+        var dn = new Date();
+        document.getElementById("one").innerHTML = d;
+        document.getElementById("now").innerHTML = dn;
+      </script>
+      <p>Cherish the moments. Cherish what you have. Don't take even the smallest things for granted. <strong>I know I won't</strong>
+    </div>
+    <div id="media">
+      <h2>Know your spouse</h2>
+      <p>Don't just love her. Study her.</p>
+      <iframe width="620" height="515" src="https://www.youtube.com/embed/TDGzNHmkY9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>Being Fireproof doesn't mean there will never be a fire; it means that <em>when</em> one comes, you'll survive it</p>
+    </footer>
   </body>
 </html>
