@@ -1,3 +1,56 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="/practice" class="dropbtn">Practice</a>
+          <div class="dropdown-content">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+          </div></li>
+      </ul>
+    </nav>
+    <h1>Say Something</h1>
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#new thing">New Thing</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    <div id="story">
+      <h2>Sometimes, all we want</h2>
+      <p>Is for you to say something. It doesn't have to be much. Just something to let us know you are still thinking about us.</p>
+      <p>Haha that sounded like it was straight from every rom-com ever right? Truth is, communication is a lost art these days. Everyone's just staring into their iPhone 10s because the iPhone 11s are crap (haha). Einstein actually predicted this would happen, before cell phones even existed. <img src="https://www.snopes.com/tachyon/2017/03/technology_einstein_feature.jpg?resize=1200,630&quality=65" alt="Einstein predicts the end of human interaction" height="400" width="600"> <a class="norm" href="https://www.snopes.com/tachyon/2017/03/technology_einstein_feature.jpg?resize=1200,630&quality=65" target="_blank">Image cred</a></p>
+    </div>
+    <div id="new thing">
+      <h2>Seriously tho.</h2>
+      <p>Talk with your parents; say hi to old friends; re-establish old acquaintances. Say hi to a stranger, it just might make their day.</p>
+      <button onclick="saySomething()">The New Thing Today, is YOU saying hi to someone</button>
+      <p id="say"></p>
+      <script>
+        function saySomething(){
+          document.getElementById("say").innerHTML="I hope you don't have a good day. I hope you MAKE it a good day!"; 
+        }
+      </script>
+    </div>
+    <div id="media">
+      <h2>I don't want to get tangled in the chaos of it</h2>
+      <p>I'm looking for something we all should have, something we all should have...</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8MPbR6Cbwi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>Words are free. May as well use them to make someone else's day</p>
+    </footer>
+  </body>
 </html>
