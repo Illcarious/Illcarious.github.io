@@ -1,3 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="/practice" class="dropbtn">Practice</a>
+          <div class="dropdown-content">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+          </div></li>
+      </ul>
+    </nav>
+    <h1>JavaScript</h1>
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#javascript practice">JavaScript Practice</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    
+    <div id="story">
+      <h2>Just spent the past week straight</h2>
+      <p>Coding the sh!t out of my artificial intelligence assignment. AI, from what I've seen, is algorithms. Algorithms that inform the decision-making process (or lack thereof). In my first-year computer science course my prof. said something that will stick with me for the rest of my coding career: The problem is always you. You might <em><strong>think</strong></em> that your code is f*cking magnificent, but if it doesn't run the way you want it to, the problem is not the computer's, it's yours.</p>
+      <p>I feel like that is applicable to life in general. Not it's not the computer's problem; the it's <em>your</em> problem. Everything the works or doesn't work in your life is because of you.</p>
+    </div>
+  </body>
+  
 </html>
