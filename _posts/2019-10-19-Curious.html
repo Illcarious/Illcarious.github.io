@@ -30,7 +30,37 @@
     <div id="story">
     <h2>I'm just curious</h2>
       <p>how much of a post I can crank out before I leave for a dinner.</p>
-      <p>Seek first to understand, then to be understood. That's the premise of all arguments. One side is trying to make a point. The other doesn't understand, or doesn't even allow one side to finish. Then the other side tries to make their point. And thus the first person hasn't even had the chance to finish their point and already they have to defend against this other person's point. It's a scary and unproductive cycle that can be avoided if you are to jseek first ot understand then to be understood.</p>
+      <p>Seek first to understand, then to be understood. That's the premise of all arguments. One side is trying to make a point. The other doesn't understand, or doesn't even allow one side to finish. Then the other side tries to make their point. And thus the first person hasn't even had the chance to finish their point and already they have to defend against this other person's point. It's a scary and unproductive cycle that can be avoided if you are to seek first to understand then to be understood.</p>
     </div>
+    
+    <div id="new thing">
+      <h2>Interesting JavaScript concepts</h2>
+      <p>Testing the function calls using JS</p>
+      <p>Interesting how the call works and how dynamic it is. Anyway this is a car I want to get by the time I'm 30:</p>
+      <p id="test"></p>
+      <script>
+        var car1 = {
+          carType: function() {//this is the function "name"/how you're able to call it.
+            return this.make + " " + this.model; 
+          }
+        }
+        var car2 = {
+          make: "Lamborghini",
+          model: "Huracan"
+        }
+        var money = car1.carType.call(car2);
+        document.getElementById("test").innerHTML = money;
+      </script>
+      <p>Okay, inside "script" is the java program console. Then you can add in classes and/or functions: class Car{constructor(var){this.thing = var;}...} and then you can call a new instance of the class using newCar = new Car("Jaguar"); and document.getElementById("theId").innerHTML = newCar.thing; for Sys.out.print. Besides that, everything seems very familiar/similar.</p> 
+    </div>
+    
+    <div id="media">
+      <h2>Jaguar vs Huracan</h2>
+      <p>Guess who won?</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X9-dn0OnU0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>Appreciate all that you have and then may you be given more.</p>
+    </footer>
   </body>
 </html>
