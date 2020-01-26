@@ -1,4 +1,55 @@
 <!DOCTYPE html>
-<head>
-</head>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>{{ page.title }}</title>
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="/practice" class="dropbtn">Practice</a>
+          <div class="dropdown-content">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+          </div></li>
+      </ul>
+    </nav>
+    
+    <h1>It's been a minute.</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#new thing">New Thing</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    
+    <div id="story">
+    <h2>2020 Baby!</h2>
+      <p>It looks like my posting dropped off in the middle of October. So much stuff got piled on towards the second half of the semester. HCI group project, AI assignments and research paper, all came together in a whirlwind of a sh!tshow. Btw, I'm definitely going to change my css style soon.</p>
+    <p>I decided that the year 2020 would be the year 20/20, year of clarity. No more distractions. No more bullsh!t. Just purposeful, meaningful grind.</p>
+    </div>
+    
+    <div id="new thing">
+      <h2>CUSEC</h2>
+      <p>The new thing is more of a new experience this time. I went to Montreal for a 3 day conference for a software engineering conference for students. It was eye-opening on many many fronts. First of all, I'd forgotten what a big city environment felt like. I forgot the pace and the game that people played in the big cities. It felt refreshing to say the least. Also, CUSEC definitely showed me what I need to work on for my software engineering career. I know what I need to do now. I know what I will do now.</p> 
+    </div>
+    
+    <div id="media">
+      <h2>New Life Resolution</h2>
+      <p>This man is one of my Favourites</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KtVX9kD5w0I?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>Relentless pursuit of my goal</p>
+    </footer>
+  </body>
 </html>
