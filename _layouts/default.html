@@ -6,25 +6,32 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-				<li><a href="/practice">Practice</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:fakeemail@gmail.com">email</a></li>
-	        		<li><a href="https://github.com">github.com</a></li>
+			<div class="topNav">
+				<ul>
+				    <li><a href="../index.html">Home</a></li>
+				    <li><a href="./about/"><u style="font-family: inherit;">About</u></a></li>
+				    <li><a href="./blog.html">Blog</a></li>
+				    <li><a href="./projects.html">Projects</a></li>
+				    <li style="margin-top: 4vh;" ><a href="./contact.html">Contact</a></li>
 				</ul>
-			</footer>
+
+			    </div>
+			<div class="content">
+				<div class="title"><h1>About Me</h1></div>
+				<div class="description">{{ content }}</div>
+				<div>
+				    {% for post in site.posts %}
+				    <div class="cardrow">
+					<div class="cardcolumn">
+					    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+					</div>
+				    </div>
+				    {% endfor %}
+				    </div>
+				
+			</div>
+			
+			
+			
 		</body>
 	</html>
