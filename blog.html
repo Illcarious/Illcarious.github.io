@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -12,14 +13,7 @@
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about/"><u style="font-family: inherit;">About</u></a></li>
-            <li><div class="dropdown">
-                <a href="../blog.html" class="dropbtn">Blog</a>
-                <!-- <div class="dropdown-content">
-                  {% for post in site.posts %}
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  {% endfor %}
-                </div> -->
-            </div></li>
+            <li><a href="./blog.html">Blog</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li style="margin-top: 4vh;" ><a href="./contact.html">Contact</a></li>
         </ul>
@@ -30,7 +24,17 @@
         <div class="description"><p>So yeah, this is me</p></div>
     </div>
 
-
+    {% for post in site.posts %}
+    <div class="cardrow">
+        <div class="cardcolumn">
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </div>
+    </div>
+    {% endfor %}
+        
+        
+        
+		
 
 
 

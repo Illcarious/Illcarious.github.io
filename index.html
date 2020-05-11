@@ -1,8 +1,44 @@
----
-layout: default
-title: Welcome
----
-<div class="blurb">
-	<h1>Welcome</h1>
-	<p>Please have a look around the website. This is mostly for me to practice my webdev skills; occasional blog</p>
-</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/newMain.css">
+</head>
+
+<body>
+    <div class="topNav">
+        <ul>
+            <li><a href="/"><u style="font-family: inherit;">Home</u></a></li>
+            <li><a href="./about/index.html">About</a></li>
+            <li><div class="dropdown">
+                <a href="./practice" class="dropbtn">Blog</a>
+                <!-- <div class="dropdown-content">
+                  {% for post in site.posts %}
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  {% endfor %}
+                </div> -->
+            </div></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li style="margin-top: 4vh;" ><a href="./contact.html">Contact</a></li>
+        </ul>
+        
+    </div>
+    <div class="content">
+        <div class="title"><h1>This is it</h1></div>
+        <div class="description"><p>My home page</p></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
