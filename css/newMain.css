@@ -37,12 +37,14 @@ ul{
 .content{
     position: absolute;
     top: 10%;
+    margin-left: 12%;
     width: 100%;
 }
 
 .title{
-    padding-top: 2%;
-    text-align: center;
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .description{
