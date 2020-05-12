@@ -9,10 +9,10 @@ body{
 }
 
 .home_body{
-    background-image: url('../images/Home2.jpg');
+    background-image: url('../light/Home.jpg');
     background-position: center;
-    background-position-y: -100px;
-    background-size: 40%;
+    background-position-y: 0px;
+    background-size: 130%;
     background-repeat: no-repeat;
     background-color: black;
 }
@@ -57,13 +57,13 @@ body{
     font-size: 25px;
     position: fixed;
     width: 10%;
-    height: 30%;
-    top: 20%;
-    margin-top: 5vh;
-    padding-top: 5vh;
-    border-right-style: solid;
-    border-right-width: 2px;
-    border-color: orangered;
+    height: 32%;
+    top: 30%;
+    padding-top: 7%;
+    margin-left: 5%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: rgba(255, 255, 255, 0.705);
     padding-right: 2vh;
     z-index: 34;
     /*background-color: rgba(255,255,255, 0.05);*/
@@ -71,31 +71,33 @@ body{
 
 
 .topNav li{
-    padding: 0.5vh 2vh;
+    padding: 0.2vh 2vh;
     width: auto;
 }
 
 .topNav a{
-    font-family: 'Cambria Math';
+    font-family: 'Calibri';
     /*font-family: 'Dosis'; */
     text-decoration: none;
     color: white;
     width: inherit;
-    
+    font-size: 20px;
 }
 
 .topNav a:hover{
     text-decoration: solid underline;
-    text-decoration-color: orangered;
+    text-decoration-color: white;
 }
 
 ul{
+    padding-left: 3px;
+    margin-top: 1vh;
     list-style: none;
 }
 
 .content{
     position: absolute;
-    margin-left: 10%;
+    margin-left: 15%;
     top: 10%;
     width: 80%;
 }
@@ -119,7 +121,7 @@ ul{
 }
 
 .desc-three{
-    width: 33%;
+    width: 45%;
     float: left;
 }
 
