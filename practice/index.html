@@ -1,7 +1,4 @@
 
----
-title: A post a day
----
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +10,7 @@ title: A post a day
 <body class="blog_body">
     <div class="topNav">
         <div style="padding-left: 3vh;">
-            <img src="./images/Logo@2x.png" width="30%">
+            <img src="../images/Logo@2x.png" width="30%">
         </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
@@ -28,9 +25,7 @@ title: A post a day
         <div class="description"><h1>A LOOK INTO MY MIND</h1></div>
         <p>Bruce Lee once said, "I don't fear the man who practices 1000 kicks in one day; I fear the man who practices one kick a day for 1000 days". What a great saying to live by.</p>
         <ul class="posts" style="text-align: center;">
-            {% for post in site.posts %}
-				<li class="norm"><span>{{ post.date | date_to_string }}</span> » <a class="norm" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-			{% endfor %}
+            <a href="../index.html">GO BACK</a></li>
         </ul>
     </div>
 
