@@ -18,12 +18,13 @@
         
     </div>
     <div class="blog-content">
-       <!-- <div class="title"><h1>TITLE GOES HERE</h1></div>-->
         <div class="description"><h1>A LOOK INTO MY MIND</h1></div>
         <p>Bruce Lee once said, "I don't fear the man who practices 1000 kicks in one day. I fear the man who practices one kick a day for 1000 days". What a great saying to live by.</p>
-        <!--{% for post in site.posts %}
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        {% endfor %}-->
+        <ul>
+            {% for post in site.blogposts %}
+            <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
     </div>
 
 

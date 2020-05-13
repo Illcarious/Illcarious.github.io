@@ -95,6 +95,15 @@ ul{
     list-style: none;
 }
 
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
 .topNav li:nth-child(5){
     margin-top: 6vh;
 }
@@ -164,9 +173,7 @@ ul{
 .desc-left{
     float: left;
 }
-.desc-right{
-    /*gives appropriate spacing as is*/
-}
+
 
 .desc-three{
     width: 33%;
