@@ -214,6 +214,13 @@ ul.posts li {
     text-align: left;
 }
 
+.home_text_2{
+    font-size: 20px; 
+    float: left; 
+    margin-left: 27%;
+    text-align: left;
+}
+
 /*Blog section*/
 .desc-blog{
     text-align: center;
