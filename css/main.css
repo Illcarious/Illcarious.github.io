@@ -1,84 +1,325 @@
-body {
-    margin: 60px auto;
-    width: 60%;
-    background: #FFFFFF;
+*{
+    margin: 0px;
+    font-family: 'Cambria Math';
+    color: white;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Calibri', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+body{
+    background-attachment: fixed;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+.home_body{
+    background-image: url('../light/Home.jpg');
+    background-position: center;
+    background-position-y: 0px;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-color: black;
 }
-a.norm {
+
+.about_body{
+    background-image: url('../light/About2.jpg');
+    background-position: right;
+    background-position-y: 0px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.projects_body{
+    background-image: url('../light/Projects.jpg');
+    background-position: center;
+    background-position-y: 0vh;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.contact_body{
+    background-image: url('../light/Contacts.jpg');
+    background-position: center;
+    background-position-y: 0vh;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.blog_body{
+    background-image: url('../light/Blog-flip.jpg');
+    background-position: right;
+    background-position-y: 0vh;
+    background-size: 135%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.topNav{
+    font-size: 25px;
+    position: fixed;
+    width: 10%;
+    height: 40%;
+    top: 30%;
+    padding-top: 0%;
+    margin-left: 5%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: rgba(255, 255, 255, 0.705);
+    padding-right: 2vh;
+    z-index: 34;
+    /*background-color: rgba(255,255,255, 0.05);*/
+}
+
+
+.topNav li{
+    padding: 0.2vh 2vh;
+    width: auto;
+}
+
+.topNav ul{
+    padding-top: 7vh;
+}
+
+.topNav a{
+    font-family: 'Calibri';
+    /*font-family: 'Dosis'; */
     text-decoration: none;
-    color: #66e0ff;
-    background: #FFFFFF;
+    color: white;
+    width: inherit;
+    font-size: 20px;
 }
-a:hover {
-    background-color: #80e5ff;
+
+.topNav a:hover{
+    text-decoration: solid underline;
+    text-decoration-color: white;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Calibri', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+ul{
+    padding-left: 3px;
+    margin-top: 1vh;
+    list-style: none;
 }
 
 ul.posts { 
-    margin-left: 30%; 
+    margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
 }
-/*----------------for the menu----------------*/
-h2 {
-          border-left: 6px solid #333;
-          background-color: #e6e6ff;
-      }
-      li a, .dropbtn {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        background-color: #262626;
-      }
-      li a:hover:not(.active) {
-          background-color: #006680;
-      }
-      li.dropdown {
-          display: inline-block;			    
-      }
-      .dropdown-content {
-          overflow-y: auto;
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-      }
-      .dropdown-content a {
-          color: #99ffff;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-      }
-      .dropdown-content a:hover {background-color: grey;}
-      .dropdown:hover .dropdown-content {
-          display: block;
-      }
+
+.topNav li:nth-child(5){
+    margin-top: 6vh;
+}
+
+.content{
+    position: absolute;
+    margin-left: 18%;
+    top: 10%;
+    width: 80%;
+}
+
+.cardrow > a{
+    text-decoration: none;
+}
+
+.cardrow > a:hover{
+    box-shadow: 0px 11px 8px 0px rgba(255, 255, 255, 0.596);
+    
+}
+
+/*interestingly I've used this layout is more of my pages than content solely*/
+.blog-content{
+    position: absolute;
+    margin-left: 15%;
+    top: 10%;
+    width: 80%;
+}
+
+.title{
+    padding-top: 2%;
+    text-align: center;
+}
+
+.description{
+
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.underline {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.705),rgba(255, 255, 255, 0.705));
+    background-position:bottom; /*Adjust the background-position to move the line*/
+    background-size: 70% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 7vh;
+    margin-left: 14.5%;
+}
+
+.underline-about{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.705),rgba(255, 255, 255, 0.705));
+    background-position:bottom left; /*Adjust the background-position to move the line*/
+    background-size: 30% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 2vh;
+}
+
+.underline-about-blk{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.712));
+    background-position:bottom left; /*Adjust the background-position to move the line*/
+    background-size: 30% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 2vh;
+}
+
+.desc-left{
+    float: left;
+}
+
+
+
+.desc-three{
+    width: 33%;
+    float: left;
+}
+
+.desc-three-about-sections{
+    text-align: left;
+    margin-top: 10%;
+    width: 33%;
+    float: left;
+}
+
+.desc-three-about{
+    padding-top: 8vh;
+    width: 25%;
+    float: left;
+}
+
+.desc-three-about-you{
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 33%;
+    float: left;
+}
+
+.home_text{
+    font-size: 25px; 
+    float: left; 
+    margin-left: 27%;
+    text-align: left;
+}
+
+/*Blog section*/
+.desc-blog{
+    text-align: center;
+}
+
+.overlay{
+    margin-top: 12vh;
+    text-align: center;
+    background-color: rgba(255,165,0,0.15);
+    width: 40%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Cambria Math';
+    color: white;
+    font-size: 25px;
+}
+
+.overlay_contact{
+    width: 20%;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    background-color: rgba(180, 61, 61, 0.633);
+    text-align: center;
+    border-radius: 50px 50px;
+}
+
+.overlay_about{
+    padding-left: 8vh;
+    /*background-color: rgba(255,165,0,0.15);*/
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0px 50px;
+}
+
+.overlay_me{
+    padding-top: 4vh;
+    height: 100%;
+    /*background-color: rgba(255,165,0,0.15);*/
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0px 50px;
+}
+
+
+/*card profiles for blog posts*/
+.cardcolumn {
+    float: left;
+    margin: 5.3vh;
+    padding-top: 7vh;
+    width: 33%;
+    max-width: 300px;
+    height: 215px;
+    /*box-shadow: 0px 4px 3px 0 rgba(80, 68, 13, 0.534);*/
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  }
+  
+
+  .cardrow {width: 100%;}
+  
+
+  .cardrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .cardshape {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    max-width: 300px;
+    
+    text-align: center;
+    font-family: arial;
+  }
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1500px){
+    .topNav{
+        padding-right: 6vh;
+    }
+    .topNav a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .topNav{
+        padding-right: 5.5vh;
+    }
+    .topNav a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .topNav{
+        padding-right: 5vh;
+    }
+    .topNav li{
+        padding: 2vh 0.5vh;
+        width: auto;
+    }
+    .topNav a{
+        font-size: 10px;
+    }
+
+}
