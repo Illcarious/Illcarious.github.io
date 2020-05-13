@@ -18,37 +18,37 @@ body{
 }
 
 .about_body{
-    background-image: url('../images/About.jpg');
-    background-position: center;
-    background-position-y: -300px;
-    background-size: 99.9%;
+    background-image: url('../light/About2.jpg');
+    background-position: right;
+    background-position-y: 0px;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-color: black;
 }
 
 .projects_body{
-    background-image: url('../images/Projects2.jpg');
+    background-image: url('../light/Projects.jpg');
     background-position: center;
-    background-position-y: -100px;
-    background-size: 99.9%;
+    background-position-y: 0vh;
+    background-size: 110%;
     background-repeat: no-repeat;
     background-color: black;
 }
 
 .contact_body{
-    background-image: url('../images/Contact2.jpg');
+    background-image: url('../light/Contacts.jpg');
     background-position: center;
-    background-position-y: -100vh;
-    background-size: 100%;
+    background-position-y: 0vh;
+    background-size: 140%;
     background-repeat: no-repeat;
     background-color: black;
 }
 
 .blog_body{
-    background-image: url('../images/Blog3.jpg');
-    background-position: center;
+    background-image: url('../light/Blog-flip.jpg');
+    background-position: right;
     background-position-y: 0vh;
-    background-size: 100%;
+    background-size: 135%;
     background-repeat: no-repeat;
     background-color: black;
 }
@@ -95,7 +95,28 @@ ul{
     list-style: none;
 }
 
+.topNav li:nth-child(5){
+    margin-top: 6vh;
+}
+
 .content{
+    position: absolute;
+    margin-left: 18%;
+    top: 10%;
+    width: 80%;
+}
+
+.cardrow > a{
+    text-decoration: none;
+}
+
+.cardrow > a:hover{
+    box-shadow: 0px 10px 8px 0px rgba(211, 168, 27, 0.452);
+    
+}
+
+/*interestingly I've used this layout is more of my pages than content solely*/
+.blog-content{
     position: absolute;
     margin-left: 15%;
     top: 10%;
@@ -108,10 +129,37 @@ ul{
 }
 
 .description{
-    margin-top: 5vh;
+    margin-top: 7vh;
     text-align: center;
 }
 
+.underline {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.705),rgba(255, 255, 255, 0.705));
+    background-position:bottom; /*Adjust the background-position to move the line*/
+    background-size: 70% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 7vh;
+    margin-left: 14.5%;
+}
+
+.underline-about{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.705),rgba(255, 255, 255, 0.705));
+    background-position:bottom left; /*Adjust the background-position to move the line*/
+    background-size: 30% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 2vh;
+}
+
+.underline-about-blk{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.712));
+    background-position:bottom left; /*Adjust the background-position to move the line*/
+    background-size: 30% 2px; /*Adjust the background size to control length and height*/
+    background-repeat:no-repeat;
+    margin-bottom: 3.5vh;
+    padding-bottom: 2vh;
+}
 
 .desc-left{
     float: left;
@@ -121,10 +169,37 @@ ul{
 }
 
 .desc-three{
-    width: 45%;
+    width: 33%;
     float: left;
 }
 
+.desc-three-about-sections{
+    text-align: left;
+    margin-top: 10%;
+    width: 33%;
+    float: left;
+}
+
+.desc-three-about{
+    padding-top: 8vh;
+    width: 25%;
+    float: left;
+}
+
+.desc-three-about-you{
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 33%;
+    float: left;
+}
+
+.home_text{
+    font-size: 25px; 
+    float: left; 
+    margin-left: 27%;
+    text-align: left;
+}
 
 /*Blog section*/
 .desc-blog{
@@ -144,10 +219,29 @@ ul{
     font-size: 25px;
 }
 
+.overlay_contact{
+    width: 20%;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    background-color: rgba(180, 61, 61, 0.633);
+    text-align: center;
+    border-radius: 50px 50px;
+}
+
 .overlay_about{
-    padding-left: 10vh;
+    padding-left: 8vh;
     /*background-color: rgba(255,165,0,0.15);*/
-    background-color: rgba(0, 0, 0, 0.17);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0px 50px;
+}
+
+.overlay_me{
+    padding-top: 4vh;
+    height: 100%;
+    /*background-color: rgba(255,165,0,0.15);*/
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0px 50px;
 }
 
@@ -155,15 +249,17 @@ ul{
 /*card profiles for blog posts*/
 .cardcolumn {
     float: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5.3vh;
+    padding-top: 7vh;
     width: 33%;
-    height: 315px;
-    padding: 1.2em;
+    max-width: 300px;
+    height: 215px;
+    /*box-shadow: 0px 4px 3px 0 rgba(80, 68, 13, 0.534);*/
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   }
   
 
-  .cardrow {width: 45%; margin-left: auto; margin-right: auto;}
+  .cardrow {width: 100%;}
   
 
   .cardrow:after {
@@ -172,7 +268,13 @@ ul{
     clear: both;
   }
 
-
+  .cardshape {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    max-width: 300px;
+    
+    text-align: center;
+    font-family: arial;
+  }
 
 
 /*Responsive*/
