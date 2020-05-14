@@ -28,7 +28,9 @@ title: Blog
 
     <div class="blog-content">
         <div class="description"><h1>A LOOK INTO MY MIND</h1></div>
-        <p>Bruce Lee once said, "I don't fear the man who practices 1000 kicks in one day; I fear the man who practices one kick a day for 1000 days". What a great saying to live by.</p>
+        <br>
+        <p style="text-align: center;">The purpose of my blog has evolved from practicing a kick, to console.logging what's on my mind. There are much different types of kicks I will practice now.</p>
+        <p style="text-align: center;">"I don't fear the man who practices 1000 kicks in one day; I fear the man who practices one kick a day for 1000 days". What a great saying to live by though.</p>
         <ul class="posts" style="text-align: center;">
             {% for post in site.posts %}
             <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>

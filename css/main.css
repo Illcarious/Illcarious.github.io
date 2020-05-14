@@ -57,7 +57,7 @@ body{
     font-size: 25px;
     position: fixed;
     width: 10%;
-    height: 40%;
+    height: 36%;
     top: 30%;
     padding-top: 0%;
     margin-left: 5%;
@@ -106,6 +106,12 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    font-size: 20px;
+}
+
+ul.posts a{
+    color: rgb(206, 60, 60);
+    text-decoration: none;
 }
 
 .topNav li:nth-child(5){
@@ -139,6 +145,13 @@ ul.posts li {
 .title{
     padding-top: 2%;
     text-align: center;
+}
+
+.home-title{
+    margin-left: 27%;
+    text-align: left;
+    font-size: 50px;
+    padding-bottom: 1%;
 }
 
 .description{
