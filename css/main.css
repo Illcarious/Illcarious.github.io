@@ -218,6 +218,11 @@ ul.posts a{
     margin-left: 5%;
     width: 33%;
     float: left;
+    
+}
+
+.color_blk{
+    color: black;
 }
 
 .home_text{
@@ -319,6 +324,30 @@ ul.posts a{
     .topNav a{
         font-size: 20px;
     }
+    .home_body{
+        background-size: 200%;
+    }
+    .about_body{
+        background-size: 180%;
+        background-position-y: 60%;
+    }
+    .blog_body{
+        background-size: 200%;
+        background-position-y: 60%;
+    }
+    .projects_body{
+        background-size: 180%;
+        background-position-y: 30%;
+    }
+    .contact_body{
+        background-size: 200%;
+        background-position-y: 30%;
+    }
+    .blog-content{
+        margin-left: 25%;
+        width: 60%;
+    }
+    
 }
 
 @media screen and (max-width: 960px){
@@ -328,18 +357,94 @@ ul.posts a{
     .topNav a{
         font-size: 15px;
     }
+    .home_body{
+        background-size: 350%;
+    }
+    .about_body{
+        background-size: 250%;
+        background-position-x: center;
+    }
+    .color_blk{
+        color: white;
+    }
+    .blog_body{
+        background-size: 350%;
+        background-position-y: 60%;
+    }
+    .projects_body{
+        background-size: 230%;
+        background-position-y: 30%;
+    }
+    .contact_body{
+        background-size: 270%;
+        background-position-y: 30%;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .topNav{
+        padding-right: 5vh;
+    }
+    .topNav a{
+        font-size: 10px;
+    }
+    .home_body{
+        background-size: 400%;
+    }
+    .about_body{
+        background-size: 290%;
+    }
+    .projects_body{
+        background-size: 350%;
+        background-position: right;
+        background-position-y: 30%;
+    }
+    .cardrow{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .cardcolumn{
+        width: 70%;
+    }
+    .contact_body{
+        background-size: 350%;
+        background-position-y: 30%;
+    }
 }
 
 @media screen and (max-width: 600px){
     .topNav{
         padding-right: 5vh;
     }
-    .topNav li{
-        padding: 2vh 0.5vh;
-        width: auto;
-    }
     .topNav a{
         font-size: 10px;
     }
-
+    .home_body{
+        background-size: 400%;
+    }
+    .about_body{
+        background-size: 380%;
+        background-position-x: left;
+    }
+    .desc-three-about-sections{
+        margin-top: 10%;
+        width: 80%;
+        padding-left: 10%;
+    }
+    .desc-three-about{
+        width: 60%;
+        padding-left: 20%;
+    }
+    .desc-three-about-you{
+        width: 80%;
+        padding-bottom: 20%;
+    }
+    .blog_body{
+        background-size: 400%;
+        background-position-y: 60%;
+    }
+    .contact_body{
+        background-size: 400%;
+        background-position-y: 30%;
+    }
 }
