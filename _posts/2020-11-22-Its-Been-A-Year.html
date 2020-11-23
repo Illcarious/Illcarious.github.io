@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/oldMain.css">
+    <title>{{ page.title }}</title>
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="/practice" class="dropbtn">Practice</a>
+          <div class="dropdown-content">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+          </div></li>
+      </ul>
+    </nav>
+    
+    <h1>It's been a year.</h1>
+    
+    <nav>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#new thing">New Thing</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+    
+    <div id="story">
+      <h2>Haha what a year it's been</h2>
+      <p>Who could've imagined the year we were all gonna go through. RIP Kobe, RIP sanity, RIP life as we knew it. Covid-19 has been a real kick in the butt and an eye-opener. People now (hopefully) understand how fleeting and fragile life is. I'm not gonna make this an opinion piece/real reflection of my thoughts right now. More of testing out this keyboard and putting up another post for my own sake.</p>
+    <p>I decided that the year 2020 would be the year 20/20, year of clarity. No more distractions. No more bullsh!t. Just purposeful, meaningful grind. I can somewhat say so far that this is what it's been. Definitely a year of clarity. I see what my goals are now and what I lost in the preceding 1.5 ish years. I'm going to regain and exceed previous form.</p>
+    </div>
+    
+    <div id="new thing">
+      <h2>Handshakes are illegal now</h2>
+      <p>The new thing is the new norm. I wish the major thing was learning a new technology/stack/paradigm, etc. but no, the new thing is that Covid-19 has changed the norm. Facemasks are mandatory now; no more handshakes; 6 feet apart from one another; grocery stores are only selling essentials now. This sh!t is real. </p>
+    </div>
+    
+    <div id="media">
+      <h2>That empty London video</h2>
+      <p>Never thought this would be an accurate reflection of life...</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eCdRFMp8Xwo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <p>When will life be normal again...?</p>
+    </footer>
+  </body>
+</html>
