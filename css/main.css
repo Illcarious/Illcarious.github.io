@@ -155,7 +155,6 @@ ul.posts a{
 }
 
 .description{
-
     margin-top: 7vh;
     text-align: center;
 }
@@ -273,6 +272,13 @@ ul.posts a{
     /*background-color: rgba(255,165,0,0.15);*/
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0px 50px;
+}
+
+.overlay_about_me{
+    padding-left: 10%;
+    /*background-color: rgba(255,165,0,0.15);*/
+    background-color: rgba(129, 86, 13, 0.89);
+    border-radius: 10px 10px;
 }
 
 .overlay_me{
