@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quote of the day</title>
+    <link rel="icon" type="image/png" href="./images/Flav.png">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body class="contact_body">
+    <div class="topNav">
+        <div style="padding-left: 3vh;">
+            <img src="./images/Logo@2x.png" width="30%">
+        </div>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./projects.html">PROJECTS</a></li>
+            <li><a href="./weather.html"><strong style="font-family: inherit; color: rgb(226, 34, 34);">WEATHER</strong></a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="blog-content">
+        <div class="title"></div>
+        <div class="desc_blog">
+            <div class="description"><h1>WEATHER</h1></div>
+            <div class="overlay_contact">
+                <input type="text" id="cityCode" style="color: black; text-align: center;" placeholder="Enter a city">
+                <button id="searchButton" style="color: black">Search</button>
+                <div class="weather-container">
+                    <img class="icon">
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                    <p>High</p>
+                    <p class="high"></p>
+                    <p>Low</p>
+                    <p class="low"></p>
+                    <p class="speed">wind degree is: </p>
+                    <p class="deg">wind speed is: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="enter.js"></script>
+</body>
+
+
+</html>
