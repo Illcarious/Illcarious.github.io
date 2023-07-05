@@ -4,7 +4,7 @@ function myFunction() {
   var city = document.getElementById("cityCode").value;
 
   $.getJSON(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&units=metric&APPID=c1529d3a73ef95a02dd287d96a67f644",
     function (data) {
