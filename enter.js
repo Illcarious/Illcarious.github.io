@@ -1,4 +1,4 @@
-import { myFunction } from "./script.js";
+import { myFunction } from "./script.js?v=20230705";
 
 const element = document.getElementById("cityCode");
 element.addEventListener("keydown", function (e) {
