@@ -25,8 +25,6 @@ function myFunction() {
       $(".low").html("Low: " + low + " °C");
       $(".speed").html("Wind speed: " + windSpeed + " KM/hr");
       $(".deg").html("Wind degree: " + windDeg + "°");
-
-      console.log("the info: ", data);
     }
   );
 }
