@@ -9,7 +9,7 @@ function myFunction() {
       "&units=metric&APPID=c1529d3a73ef95a02dd287d96a67f644",
     function (data) {
       var icon =
-        "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
       var temp = Math.floor(data.main.temp);
       var weather = data.weather[0].main;
       var high = Math.floor(data.main.temp_max);
