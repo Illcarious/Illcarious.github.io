@@ -4,6 +4,7 @@ const element = document.getElementById("cityCode");
 element.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     myFunction();
+    navigator.vibrate(30);
   }
 });
 

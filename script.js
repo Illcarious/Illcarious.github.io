@@ -18,13 +18,15 @@ function myFunction() {
       var windDeg = data.wind.deg;
 
       $(".icon").attr("src", icon);
-      $(".temp").html(temp); //append because your adding into this tag, image was a src itself, thats the difference
+      $(".temp").html(temp + " °C"); //append because your adding into this tag, image was a src itself, thats the difference
       //.html() instead to replace the data
       $(".weather").html(weather);
-      $(".high").html(high);
-      $(".low").html(low);
-      $(".speed").html(windSpeed);
-      $(".deg").html(windDeg);
+      $(".high").html("High: " + high + " °C");
+      $(".low").html("Low: " + low + " °C");
+      $(".speed").html("Wind speed: " + windSpeed + " KM/hr");
+      $(".deg").html("Wind degree: " + windDeg + "°");
+
+      console.log("the info: ", data);
     }
   );
 }

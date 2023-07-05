@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Quote of the day</title>
+    <title>Weather App</title>
     <link rel="icon" type="image/png" href="./images/Flav.png">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -26,20 +26,24 @@
     <div class="blog-content">
         <div class="title"></div>
         <div class="desc_blog">
-            <div class="description"><h1>WEATHER</h1></div>
-            <div class="overlay_contact">
+            <div class="description-weather"><h1>WEATHER APP</h1></div>
+            <div class="overlay_weather">
                 <input type="text" id="cityCode" style="color: black; text-align: center;" placeholder="Enter a city">
                 <button id="searchButton" style="color: black">Search</button>
                 <div class="weather-container">
                     <img class="icon">
-                    <p class="weather"></p>
-                    <p class="temp"></p>
-                    <p>High</p>
-                    <p class="high"></p>
-                    <p>Low</p>
-                    <p class="low"></p>
-                    <p class="speed">wind degree is: </p>
-                    <p class="deg">wind speed is: </p>
+                    <br>
+                    <p class="weather" style="display: inline-block; font-family: 'Lucida Handwriting', 'Brush Script MT'; font-size: 30px;"></p>
+                    <p style="display: inline-block;">&nbsp;</p>
+                    <p class="temp" style="display: inline-block; font-family: 'Lucida Handwriting'; font-size: 30px;"></p>
+                    <br><br>
+                    <p class="high weather-text" style="font-family: 'Optima', 'Snell Roundhand', 'Brush Script MT'; font-size: 15px;">Welcome to my bare bones weather app which uses an API to call the data of weather from cities all around the world. Please type your city of interest in the search bar above to see what the weather is like in that region!</p>
+                    <br>
+                    <p class="low weather-text"></p>
+                    <br>
+                    <p class="deg weather-text"></p>
+                    <br>
+                    <p class="speed weather-text"></p>
                 </div>
             </div>
         </div>
